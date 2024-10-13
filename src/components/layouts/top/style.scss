@@ -1,0 +1,36 @@
+$Button: #000000;
+$Text: #FAFAFA;
+$Primary: #FFFFFF;
+
+
+.top{
+    background: $Button;
+    padding: 15px 0;
+&--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        &--sale{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &__text{
+            font-size: 14px;
+            font-weight: normal;
+            color: $Text;
+        }
+        &__btn{
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 18px;
+            color: $Text;
+            border-bottom: 0.1px solid $Text;
+            &:hover{
+                border-bottom: 1px solid $Text;
+            }
+            &:active{
+                border-bottom: 0.1px solid $Text;
+            }
+        }
+    }}
+}
