@@ -26,8 +26,8 @@ const CustomArrow = ({
 };
 
 export const Today: React.FC = () => {
-  const carouselRef = useRef<any>(null); // Ref to control Carousel
-  const [viewAll, setViewAll] = useState(false); // State to toggle view
+  const carouselRef = useRef<any>(null); 
+  const [viewAll, setViewAll] = useState(false); 
 
   const handleViewAll = () => {
     setViewAll(!viewAll); // Toggle between view modes
@@ -57,7 +57,6 @@ export const Today: React.FC = () => {
 
       <div className="today__wrapper">
         {viewAll ? (
-          // Render all products in a grid or list when viewAll is true
           <div className="today__all-products">
             {TODAY_PRODUCTS.map((item) => (
               <Card
@@ -93,7 +92,7 @@ export const Today: React.FC = () => {
           </Carousel>
         )}
 
-        <MyButton className="today__wrapper__btn" onClick={handleViewAll}>
+        <MyButton className="today__wrapper__btn !mb-[60px]" onClick={handleViewAll}>
           {viewAll ? "Show Less" : "View All Products"}
         </MyButton>
       </div>

@@ -1,5 +1,11 @@
 import { FaChevronRight } from "react-icons/fa";
 
+import { LuGamepad } from "react-icons/lu";
+import { BsSmartwatch } from "react-icons/bs";
+import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import { MdOutlinePhotoCamera } from "react-icons/md";
+import { FaHeadphonesAlt } from "react-icons/fa";
+
 export const ASIDE = [
   {
     id: 1,
@@ -211,14 +217,6 @@ export const TODAY_PRODUCTS = [
   },
 ];
 
-
-import { LuGamepad } from "react-icons/lu";
-import { BsSmartwatch } from "react-icons/bs";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { MdOutlinePhotoCamera } from "react-icons/md";
-import { FaHeadphonesAlt } from "react-icons/fa";
-
-
 export const CATEGORIES_CARD_DATA = [
   {
     id: 1,
@@ -253,4 +251,282 @@ export const CATEGORIES_CARD_DATA = [
     image: <LuGamepad fontSize={56}/>,
   },
   
+]
+
+
+export const THIS_MONTH_PRODUCTS =[
+  {
+    id: 1,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/month-1.svg",
+  },
+  {
+    id: 2,
+    discount: 35,
+    title: "AK-900 Wired Keyboard",
+    current_price: 960,
+    old_price: 1160,
+    rate: 75,
+    image: "/images/month-2.svg",
+  },
+  {
+    id: 3,
+    discount: 30,
+    title: "IPS LCD Gaming Monitor",
+    current_price: 370,
+    old_price: 400,
+    rate: 90,
+    image: "/images/month-3.svg",
+  },
+  {
+    id: 4,
+    discount: 25,
+    title: "S-Series Comfort Chair ",
+    current_price: 375,
+    old_price: 400,
+    rate: 99,
+    image: "/images/month-4.svg",
+  },
+  {
+    id: 5,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/month-1.svg",
+  },
+  {
+    id: 6,
+    discount: 30,
+    title: "IPS LCD Gaming Monitor",
+    current_price: 370,
+    old_price: 400,
+    rate: 90,
+    image: "/images/month-2.svg",
+  },
+  {
+    id: 7,
+    discount: 35,
+    title: "AK-900 Wired Keyboard",
+    current_price: 960,
+    old_price: 1160,
+    rate: 75,
+    image: "/images/month-3.svg",
+  },
+  {
+    id: 8,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/month-4.svg",
+  },
+  {
+    id: 9,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/month-3.svg",
+  },
+  {
+    id: 10,
+    discount: 35,
+    title: "AK-900 Wired Keyboard",
+    current_price: 960,
+    old_price: 1160,
+    rate: 75,
+    image: "/images/month-1.svg",
+  },
+  {
+    id: 11,
+    discount: 30,
+    title: "IPS LCD Gaming Monitor",
+    current_price: 370,
+    old_price: 400,
+    rate: 90,
+    image: "/images/month-4.svg",
+  },
+  {
+    id: 12,
+    discount: 25,
+    title: "S-Series Comfort Chair ",
+    current_price: 375,
+    old_price: 400,
+    rate: 99,
+    image: "/images/month-2.svg",
+  },
+  {
+    id: 13,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/month-1.svg",
+  },
+  {
+    id: 14,
+    discount: 25,
+    title: "S-Series Comfort Chair ",
+    current_price: 375,
+    old_price: 400,
+    rate: 99,
+    image: "/images/chair.svg",
+  },
+  {
+    id: 15,
+    discount: 40,
+    title: "HAVIT HV-G92 Gamepad",
+    current_price: 120,
+    old_price: 160,
+    rate: 88,
+    image: "/images/playstation.svg",
+  },
+  {
+    id: 16,
+    discount: 35,
+    title: "AK-900 Wired Keyboard",
+    current_price: 960,
+    old_price: 1160,
+    rate: 75,
+    image: "/images/keyboard.svg",
+  },
+]
+
+
+export const EXPLORE_PRODUCTS =[
+  {
+    id: 1,
+    title: "Breed Dry Dog Food",
+    price: 100,
+    image: "/images/ex-1.svg",
+    rate: 35,
+  },
+  {
+    id: 2,
+    title: "CANON EOS DSLR Camera",
+    price: 360,
+    image: "/images/ex-2.svg",
+    rate: 95,
+  },
+  {
+    id: 3,
+    title: "ASUS FHD Gaming Laptop",
+    price: 700,
+    image: "/images/ex-3.svg",
+    rate: 325,
+  },
+  {
+    id: 4,
+    title: "Curology Product Set",
+    price: 500,
+    image: "/images/ex-4.svg",
+    rate: 145,
+  },
+  {
+    id: 5,
+    title: "Kids Electric Car",
+    price: 960,
+    image: "/images/ex-5.svg",
+    rate: 65,
+    badge: "New",
+    colors: '/images/ex-c-5.svg'
+  },
+  {
+    id: 6,
+    title: "Jr. Zoom Soccer Cleats",
+    price: 1160,
+    image: "/images/ex-6.svg",
+    rate: 35,
+    colors: '/images/ex-c-6.svg'
+  },
+  {
+    id: 7,
+    title: "GP11 Shooter USB Gamepad",
+    price: 660,
+    image: "/images/ex-7.svg",
+    rate: 55,
+    badge: "New",
+    colors: '/images/ex-c-7.svg'
+  },
+  {
+    id: 8,
+    title: "Quilted Satin Jacket",
+    price: 660,
+    image: "/images/ex-8.svg",
+    rate: 55,
+    badge: "New",
+    colors: '/images/ex-c-8.svg'
+  },
+  {
+    id: 9,
+    title: "Breed Dry Dog Food",
+    price: 100,
+    image: "/images/ex-1.svg",
+    rate: 35,
+  },
+  {
+    id: 10,
+    title: "CANON EOS DSLR Camera",
+    price: 360,
+    image: "/images/ex-2.svg",
+    rate: 95,
+  },
+  {
+    id: 11,
+    title: "ASUS FHD Gaming Laptop",
+    price: 700,
+    image: "/images/ex-3.svg",
+    rate: 325,
+  },
+  {
+    id: 12,
+    title: "Curology Product Set",
+    price: 500,
+    image: "/images/ex-4.svg",
+    rate: 145,
+  },
+  {
+    id: 13,
+    title: "Kids Electric Car",
+    price: 960,
+    image: "/images/ex-5.svg",
+    rate: 65,
+    badge: "New",
+    colors: '/images/ex-c-5.svg'
+  },
+  {
+    id: 14,
+    title: "Jr. Zoom Soccer Cleats",
+    price: 1160,
+    image: "/images/ex-6.svg",
+    rate: 35,
+    colors: '/images/ex-c-6.svg'
+  },
+  {
+    id: 15,
+    title: "GP11 Shooter USB Gamepad",
+    price: 660,
+    image: "/images/ex-7.svg",
+    rate: 55,
+    badge: "New",
+    colors: '/images/ex-c-7.svg'
+  },
+  {
+    id: 16,
+    title: "Quilted Satin Jacket",
+    price: 660,
+    image: "/images/ex-8.svg",
+    rate: 55,
+    badge: "New",
+    colors: '/images/ex-c-8.svg'
+  },
 ]

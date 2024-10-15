@@ -1,0 +1,56 @@
+$Text2: #000000;
+$Secondary: #f5f5f5;
+$Red: #db4444;
+
+.this_month {
+  padding: 70px 0 140px;
+  &__all-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;}
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+   
+
+    .today__arrows {
+      display: flex;
+      gap: 8px;
+      .custom-arrow {
+        background-color: $Secondary;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        margin-bottom: 14px;
+        &:hover {
+          background-color: $Red;
+          color: #fff;
+          cursor: pointer;
+        }
+        &:active {
+          border: 1px solid $Red;
+          background-color: #fff;
+          color: $Red;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    &__products {
+      margin-top: 40px;
+      margin-bottom: 6px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__btn {
+      margin-bottom: 60px;
+    }
+  }
+}

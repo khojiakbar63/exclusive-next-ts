@@ -4,7 +4,7 @@ import './style.scss'
 
 export const Deadline = () => {
 
-  const [time, setTime] = useState<Date | null>(null); // Initially set to null to ensure client-side time update
+  const [time, setTime] = useState<Date | null>(null); 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,7 +14,7 @@ export const Deadline = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!time) return null; // Render nothing until time is available on the client
+  if (!time) return null; 
 
   const padZero = (num: number) => (num < 10 ? `0${num}` : num);
 

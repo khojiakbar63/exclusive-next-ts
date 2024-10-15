@@ -15,6 +15,7 @@ export {Today} from './sections/today';
 export {Deadline} from './ui/deadline';
 export {Card} from './ui/card';
 export {CategoriesCard} from './ui/categories-card';
+export {ExploreCard} from './ui/explore-card';
 export {AdsColumn} from './sections/ads-column';
 export {ThisMonth} from './sections/this-month';
 export {Categories} from './sections/categories';
