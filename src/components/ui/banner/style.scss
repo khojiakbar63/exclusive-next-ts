@@ -1,0 +1,60 @@
+$Button: #000000;
+$Text: #fafafa;
+
+.first {
+    height: 344px;
+    background: $Button;
+    color: #fff;
+    display: flex !important;
+    justify-content: space-between;
+
+    &--content {
+      width: fit-content;
+      padding: 38px 38px 47px 64px;
+      &--header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 20px;
+        &-title {
+          color: $Text;
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+      &-main_title {
+        font-size: 48px;
+        font-weight: bold;
+        color: $Text;
+        margin-bottom: 22px;
+      }
+      &--btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.1s ease-in;
+        &:hover {
+          transition: 2s ease-in;
+          #r-arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      span {
+        font-size: 16px;
+        font-weight: normal;
+        color: $Text;
+        border-bottom: 1px solid $Text;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          font-weight: bold;
+        }
+        &:active {
+          border-bottom-width: 2px;
+        }
+      }
+    }
+    &--image {
+      margin-top: 30px;
+    }
+  }

@@ -1,0 +1,66 @@
+$Text2: #000000;
+$Secondary: #f5f5f5;
+$Red: #db4444;
+.today {
+  &__all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px; // Space between grid items
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &__left {
+      display: flex;
+      align-items: flex-end;
+      gap: 87px;
+    }
+    &__right {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .today__arrows {
+      display: flex;
+      gap: 8px;
+      .custom-arrow {
+        background-color: $Secondary;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        margin-bottom: 14px;
+        &:hover {
+          background-color: $Red;
+          color: #fff;
+          cursor: pointer;
+        }
+        &:active {
+          border: 1px solid $Red;
+          background-color: #fff;
+          color: $Red;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+    border-bottom: 0.5px solid #000000;
+    &__products {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__btn {
+      margin-bottom: 60px;
+    }
+  }
+}

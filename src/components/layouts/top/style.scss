@@ -1,36 +1,61 @@
 $Button: #000000;
-$Text: #FAFAFA;
-$Primary: #FFFFFF;
+$Text: #fafafa;
+$Primary: #ffffff;
 
-
-.top{
-    background: $Button;
-    padding: 15px 0;
-&--wrapper{
+.top {
+  background: $Button;
+  padding: 15px 0;
+  &--wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-        &--sale{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        &__text{
-            font-size: 14px;
-            font-weight: normal;
-            color: $Text;
+    &--sale {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: 50px;
+      &__text {
+        font-size: 14px;
+        font-weight: normal;
+        color: $Text;
+      }
+      &__btn {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+        color: $Text;
+        border-bottom: 0.1px solid $Text;
+        &:hover {
+          border-bottom: 1px solid $Text;
         }
-        &__btn{
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 18px;
-            color: $Text;
-            border-bottom: 0.1px solid $Text;
-            &:hover{
-                border-bottom: 1px solid $Text;
-            }
-            &:active{
-                border-bottom: 0.1px solid $Text;
-            }
+        &:active {
+          border-bottom: 0.1px solid $Text;
         }
-    }}
+      }
+    }
+    .select {
+      background-color: $Button;
+      color: $Text;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 18px;
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    &--wrapper {
+      &--empty {
+        display: none;
+      }
+      &--sale {
+        &__text {
+          display: none;
+        }
+      }
+    }
+  }
 }

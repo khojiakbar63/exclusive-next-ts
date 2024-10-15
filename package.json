@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.21.3",
+    "icons": "^1.0.0",
     "next": "^14.2.15",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router": "^6.27.0",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

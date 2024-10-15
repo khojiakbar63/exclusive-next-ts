@@ -7,7 +7,7 @@ export const Top: React.FC = () => {
     <div className="top">
       <Container>
         <div className="top--wrapper">
-          <div></div>
+          <div className="top--wrapper--empty"></div>
 
           <div className="top--wrapper--sale">
             <p className="top--wrapper--sale__text">
@@ -16,11 +16,12 @@ export const Top: React.FC = () => {
             </p>
             <button className="top--wrapper--sale__btn">ShopNow</button>
           </div>
+
           <select className="select select-primary max-w-xs">
-            <option>Arabic</option>
-            <option>Uzbek</option>
-            <option>Korean</option>
-            <option>English</option>
+            <option value="arab">Arabic</option>
+            <option value="uzbek">Uzbek</option>
+            <option value="korean">Korean</option>
+            <option value="english">English</option>
           </select>
         </div>
       </Container>

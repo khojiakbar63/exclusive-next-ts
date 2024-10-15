@@ -1,0 +1,35 @@
+$Text2: #000000;
+
+.aside {
+  border-right: 0.5px solid $Text2;
+  padding: 40px 16px 0 0;
+  &--list {
+    width: 217px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $Text2;
+
+      &-title {
+        font-size: 16px;
+        font-weight: normal;
+        width: fit-content;
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+          transition: 0.1s ease-in-out;
+          border-bottom: 1px solid $Text2;
+        }
+      }
+      &-icon {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+

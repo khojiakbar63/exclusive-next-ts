@@ -1,0 +1,36 @@
+$Second2: #db4444;
+
+.categories_card {
+  border: 1px solid #000000b3;
+  border-radius: 4px;
+  width: 170px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $Second2;
+    color: #fff;
+    border-color: $Second2;
+    .categories_card--title {
+      color: #fff;
+    }
+  }
+  &:active {
+    border: 1px solid #000000b3;
+    .categories_card--icon {
+      transition: all 0.1s ease-in;
+      transform: scale(1.1);
+    }
+  }
+  &--title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+  }
+}

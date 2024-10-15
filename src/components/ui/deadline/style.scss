@@ -1,0 +1,18 @@
+$Text2: #000000;
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    &__item {
+      .number {
+        font-weight: bold;
+        font-size: 36px;
+        color: $Text2;
+      }
+      .text {
+        color: $Text2;
+        font-size: 12px;
+      }
+    }
+  }
