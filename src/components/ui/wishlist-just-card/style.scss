@@ -9,12 +9,7 @@ $Button: #000000;
   height: 350px;
   background: #fff;
   &:hover {
-    .card--header--add-btn {
-      transition: all 0.08s ease-in;
-
-      opacity: 1;
-    }
-    .card--header--image{
+    .card--header--image {
       transition: all 0.08s ease-in;
       transform: scale(1.1);
     }
@@ -98,6 +93,10 @@ $Button: #000000;
     }
     &--add-btn {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
       bottom: 0;
       left: 0;
       font-weight: 600;
@@ -109,7 +108,7 @@ $Button: #000000;
       color: #fff;
       width: 100%;
       transition: all 0.1s ease-in;
-      opacity: 0;
+      opacity: 1;
       &:hover {
         background-color: #201c1c;
       }
@@ -145,22 +144,28 @@ $Button: #000000;
         text-decoration: line-through;
       }
     }
-    &--rate {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      &--icons {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        &--icon {
-        }
-      }
-      &--text {
-        color: $Grey;
+    &--rate{
+      &--text{
         font-size: 14px;
-        font-weight: 600;
+        color: $Grey;
       }
     }
+  }
+}
+
+.badge--new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 26px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #00ff66;
+  &--text {
+    color: $Text;
+    font-size: 12px;
   }
 }

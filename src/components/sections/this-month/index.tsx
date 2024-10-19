@@ -1,17 +1,15 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { Carousel } from "antd";
-import { HiArrowSmallRight, HiArrowSmallLeft } from "react-icons/hi2";
-import { BigTitle, SectionTitle, Deadline, Card, MyButton } from "@/components";
+import { BigTitle, SectionTitle, Card, MyButton } from "@/components";
 import { THIS_MONTH_PRODUCTS } from "@/mocks";
 import "./style.scss";
 
 export const ThisMonth: React.FC = () => {
-  const carouselRef = useRef<any>(null); // Ref to control Carousel
-  const [viewAll, setViewAll] = useState(false); // State to toggle view
-
+  const carouselRef = useRef<any>(null); 
+  const [viewAll, setViewAll] = useState(false); 
   const handleViewAll = () => {
-    setViewAll(!viewAll); // Toggle between view modes
+    setViewAll(!viewAll); 
   };
 
   return (

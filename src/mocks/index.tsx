@@ -221,40 +221,38 @@ export const CATEGORIES_CARD_DATA = [
   {
     id: 1,
     title: "Phones",
-    image: <LuGamepad fontSize={56}/>,
+    image: <LuGamepad fontSize={56} />,
   },
   {
     id: 2,
     title: "Computers",
-    image: <HiOutlineComputerDesktop  fontSize={56}/>,
+    image: <HiOutlineComputerDesktop fontSize={56} />,
   },
   {
     id: 3,
     title: "SmartWatch",
-    image: <BsSmartwatch  fontSize={56}/>,
+    image: <BsSmartwatch fontSize={56} />,
   },
   {
     id: 4,
     title: "Camera",
-    image: <MdOutlinePhotoCamera fontSize={56}/>,
+    image: <MdOutlinePhotoCamera fontSize={56} />,
   },
-  
+
   {
     id: 4,
     title: "HeadPhones",
-    image: <FaHeadphonesAlt  fontSize={56}/>,
+    image: <FaHeadphonesAlt fontSize={56} />,
   },
-  
+
   {
     id: 4,
     title: "Gaming",
-    image: <LuGamepad fontSize={56}/>,
+    image: <LuGamepad fontSize={56} />,
   },
-  
-]
+];
 
-
-export const THIS_MONTH_PRODUCTS =[
+export const THIS_MONTH_PRODUCTS = [
   {
     id: 1,
     discount: 40,
@@ -399,10 +397,9 @@ export const THIS_MONTH_PRODUCTS =[
     rate: 75,
     image: "/images/keyboard.svg",
   },
-]
+];
 
-
-export const EXPLORE_PRODUCTS =[
+export const EXPLORE_PRODUCTS = [
   {
     id: 1,
     title: "Breed Dry Dog Food",
@@ -438,7 +435,7 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-5.svg",
     rate: 65,
     badge: "New",
-    colors: '/images/ex-c-5.svg'
+    colors: "/images/ex-c-5.svg",
   },
   {
     id: 6,
@@ -446,7 +443,7 @@ export const EXPLORE_PRODUCTS =[
     price: 1160,
     image: "/images/ex-6.svg",
     rate: 35,
-    colors: '/images/ex-c-6.svg'
+    colors: "/images/ex-c-6.svg",
   },
   {
     id: 7,
@@ -455,7 +452,7 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-7.svg",
     rate: 55,
     badge: "New",
-    colors: '/images/ex-c-7.svg'
+    colors: "/images/ex-c-7.svg",
   },
   {
     id: 8,
@@ -464,7 +461,7 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-8.svg",
     rate: 55,
     badge: "New",
-    colors: '/images/ex-c-8.svg'
+    colors: "/images/ex-c-8.svg",
   },
   {
     id: 9,
@@ -501,7 +498,7 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-5.svg",
     rate: 65,
     badge: "New",
-    colors: '/images/ex-c-5.svg'
+    colors: "/images/ex-c-5.svg",
   },
   {
     id: 14,
@@ -509,7 +506,7 @@ export const EXPLORE_PRODUCTS =[
     price: 1160,
     image: "/images/ex-6.svg",
     rate: 35,
-    colors: '/images/ex-c-6.svg'
+    colors: "/images/ex-c-6.svg",
   },
   {
     id: 15,
@@ -518,7 +515,7 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-7.svg",
     rate: 55,
     badge: "New",
-    colors: '/images/ex-c-7.svg'
+    colors: "/images/ex-c-7.svg",
   },
   {
     id: 16,
@@ -527,6 +524,124 @@ export const EXPLORE_PRODUCTS =[
     image: "/images/ex-8.svg",
     rate: 55,
     badge: "New",
-    colors: '/images/ex-c-8.svg'
+    colors: "/images/ex-c-8.svg",
+  },
+];
+
+export const WISHLIST_PRODUCTS = [
+  {
+    id: 1,
+    title: "Gucci duffle bag",
+    price: 960,
+    sale: "1160",
+    image: "/images/gucci-bag.svg",
+    discount: 35,
+  },
+  {
+    id: 2,
+    title: "RGB liquid CPU Cooler",
+    price: 1960,
+    image: "/images/w-speaker.svg",
+    sale: "",
+    discount: undefined,
+  },
+  {
+    id: 3,
+    title: "GP11 Shooter USB Gamepad",
+    price: 550,
+    image: "/images/w-playstation.svg",
+    sale: "",
+    discount: undefined,
+  },
+  {
+    id: 4,
+    title: "Quilted Satin Jacket",
+    price: 750,
+    image: "/images/w-jacket.svg",
+    sale: "",
+    discount: undefined,
+  },
+];
+
+export const WISHLIST_JUST_PRODUCTS = [
+  {
+    id: 1,
+    title: "ASUS FHD Gaming Laptop",
+    price: 960,
+    sale: "1160",
+    image: "/images/just-1.svg",
+    discount: 35,
+    rate: 65,
+    badge: undefined
+  },
+  {
+    id: 2,
+    title: "IPS LCD Gaming Monitor",
+    price: 1160,
+    sale: undefined,
+    image: "/images/tv.svg",
+    discount: undefined,
+    rate: 65,
+    badge: undefined
+  },
+  {
+    id: 3,
+    title: "HAVIT HV-G92 Gamepad",
+    price: 560,
+    sale: undefined,
+    image: "/images/playstation.svg",
+    discount: undefined,
+    rate: 65,
+    badge: "New"
+  },
+  {
+    id: 4,
+    title: "AK-900 Wired Keyboard",
+    price: 200,
+    sale: undefined,
+    image: "/images/keyboard.svg",
+    discount: undefined,
+    rate: 65,
+    badge: undefined
+  },
+  {
+    id: 5,
+    title: "ASUS FHD Gaming Laptop",
+    price: 960,
+    sale: "1160",
+    image: "/images/just-1.svg",
+    discount: 35,
+    rate: 65,
+    badge: undefined
+  },
+  {
+    id: 6,
+    title: "IPS LCD Gaming Monitor",
+    price: 1160,
+    sale: undefined,
+    image: "/images/tv.svg",
+    discount: undefined,
+    rate: 65,
+    badge: undefined
+  },
+  {
+    id: 7,
+    title: "HAVIT HV-G92 Gamepad",
+    price: 560,
+    sale: undefined,
+    image: "/images/playstation.svg",
+    discount: undefined,
+    rate: 65,
+    badge: "New"
+  },
+  {
+    id: 8,
+    title: "AK-900 Wired Keyboard",
+    price: 200,
+    sale: undefined,
+    image: "/images/keyboard.svg",
+    discount: undefined,
+    rate: 65,
+    badge: undefined
   },
 ]

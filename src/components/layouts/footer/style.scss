@@ -16,6 +16,9 @@
   &--item {
     margin-bottom: 16px;
     cursor: pointer;
+    &:hover {
+      color: rgb(154, 146, 146) !important;
+    }
   }
   &--input {
     padding: 12px 16px;
@@ -62,7 +65,7 @@
     align-items: center;
     gap: 24px;
     &-item {
-      transition: all 0.3s ease-in-out;
+      transition: all 0.05s ease-in-out;
       &:hover {
         transform: scale(1.1);
       }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Aside, Container, HeroBanner } from "@/components";
+import { Aside, HeroBanner } from "@/components";
 import "./style.scss";
 
 export const Hero: React.FC = () => {

@@ -1,0 +1,28 @@
+.wishlist {
+  padding: 95px 0 140px;
+  margin-top: 168px;
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    &__title {
+      font-size: 20px;
+    }
+  }
+  &--products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    row-gap: 60px;
+  }
+  &--just--products__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 88px 0px 68px ;
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

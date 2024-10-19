@@ -2,6 +2,7 @@ import React from "react";
 import { VscSend } from "react-icons/vsc";
 import { Container } from "@/components/container";
 import "./style.scss";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -54,17 +55,17 @@ export const Footer = () => {
               </a>
             </li>
             <li className="footer--item  !w-[175px]">
-              <a className="footer--link" href="#">
+              <a className="footer--link" href="/pages/log-in">
                 Login / Register
               </a>
             </li>
             <li className="footer--item  !w-[175px]">
-              <a className="footer--link" href="#">
+              <a className="footer--link" href="/pages/cart">
                 Cart
               </a>
             </li>
             <li className="footer--item  !w-[175px]">
-              <a className="footer--link" href="#">
+              <a className="footer--link" href="/pages/wishlist">
                 Wishlist
               </a>
             </li>
@@ -107,31 +108,31 @@ export const Footer = () => {
             </li>
 
             <li className="footer--flex">
-              <img src="/icons/qr.svg" alt="qr" />
+              <Image src="/icons/qr.svg" width={76} height={76} alt="qr" />
 
               <div className="footer--btns">
                 <button className="footer--btns--btn">
-                  <img src="/icons/google-play.svg" alt="app-store" />
+                  <Image src="/icons/google-play.svg" width={104} height={30} alt="app-store" />
                 </button>
                 <button className="footer--btns--btn">
-                  <img src="/icons/app-store.svg" alt="app-store" />
+                  <Image src="/icons/app-store.svg" width={104} height={30} alt="app-store" />
                 </button>
               </div>
             </li>
-
+  
             <li>
               <div className="footer--socials">
                 <a className="footer--socials-item" href="#">
-                  <img src="/icons/f.svg" alt="facebook" />
+                  <Image src="/icons/f.svg" width={24} height={24} alt="facebook" />
                 </a>
                 <a className="footer--socials-item" href="#">
-                  <img src="/icons/t.svg" alt="twitter" />
+                  <Image src="/icons/t.svg" width={24} height={24} alt="twitter" />
                 </a>
                 <a className="footer--socials-item" href="#">
-                  <img src="/icons/insta.svg" alt="insta" />
+                  <Image src="/icons/insta.svg" width={24} height={24} alt="insta" />
                 </a>
                 <a className="footer--socials-item" href="#">
-                  <img src="/icons/ln.svg" alt="ln" />
+                  <Image src="/icons/ln.svg" width={24} height={24} alt="ln" />
                 </a>
               </div>
             </li>

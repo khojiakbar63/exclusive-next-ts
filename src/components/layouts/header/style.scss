@@ -6,6 +6,11 @@ $Secondary: #f5f5f5;
   padding: 40px 0 16px;
   background-color: #fff;
   border-bottom: 0.5px solid $Button;
+  position: fixed;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 999;
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -39,21 +44,59 @@ $Secondary: #f5f5f5;
       display: flex;
       align-items: center;
       gap: 24px;
-      &--btns{
+      &--btns {
         display: flex;
         align-items: center;
         gap: 16px;
+        .header-btn {
+          padding: 20px !important;
+          &:focus {
+            background: #db4444 !important;
+            color: #f4f4f4;
+          }
+        }
       }
     }
-    &--search{
-        min-width: 243px;
+    &--search {
+      min-width: 243px;
     }
-   
   }
 }
 
-.active{
+.active {
   color: $Button;
   border-bottom: 1px solid $Text2;
+}
+
+.logout-icon {
+  font-size: 22px !important;
+}
+
+.custom-dropdown-panel {
+  .ant-dropdown-menu {
+    background-color: hwb(0 0% 100% / 0.743);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 10px;
+
+    .ant-dropdown-menu-item {
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .logout-icon {
+      color: #333;
+    }
+
+    .ant-dropdown-menu-item:hover {
+      background-color: #8c8a8a;
+    }
+  }
+  .ant-dropdown-menu-item-selected {
+    background-color: #DB4444 !important; // Active background color
+    color: #fff !important;               // Active text color
+    font-weight: bold;                    // Make active item bold
+  }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import "./style.scss";
+import Image from "next/image";
 
 const contentStyle: React.CSSProperties = {
   margin: 0,
@@ -21,9 +22,9 @@ export const Banner = ({
     <div className="first" style={contentStyle}>
       <div className="first--content">
         <div className="first--content--header">
-          <img
-            width={"40px"}
-            height={"49px"}
+          <Image
+            width={40}
+            height={49}
             src="/icons/apple-icon-white.svg"
             alt="Iphone 14"
           />
@@ -39,7 +40,9 @@ export const Banner = ({
           <HiArrowSmallRight id="r-arrow" fontSize={24} />
         </button>
       </div>
-      <img
+      <Image
+      width={496}
+      height={352}
         className="first--image"
         src="/images/hero_banner_iphone.png"
         alt="iphone14"

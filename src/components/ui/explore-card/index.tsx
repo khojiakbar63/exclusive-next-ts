@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
 import { BsHeart } from "react-icons/bs";
-import type { RadioChangeEvent } from "antd";
 import { GoEye } from "react-icons/go";
 import "./style.scss";
+import Image from "next/image";
 
-const onChange = (e: RadioChangeEvent) => {
-  console.log(`radio checked:${e.target.value}`);
-};
 
 export const ExploreCard = ({
   title,
@@ -43,7 +40,7 @@ export const ExploreCard = ({
             </button>
           </div>
         </div>
-        <img className="card--header--image" src={image} alt={title} />
+        <Image width={190} height={180} className="card--header--image" src={image} alt={title} />
         <button className="card--header--add-btn">Add to cart</button>
       </div>
       <div className="card--body">
@@ -53,10 +50,12 @@ export const ExploreCard = ({
           <div className="card--body--rate">
             <div className="card--body--rate--icons">
               {[1, 2, 3, 4, 5].map((item) => (
-                <img
+                <Image
                   className="card--body--rate--icons--icon"
                   src="icons/rate-star.svg"
                   alt="rate"
+                  width={20} height={20}
+                  key={item}
                 />
               ))}
             </div>
@@ -64,7 +63,8 @@ export const ExploreCard = ({
           </div>
         </div>
        {
-       colors ?  <img src={colors} alt="colors" /> : null}
+       colors ?  <Image width={48} height={20} src={colors} alt="colors" /> : null
+       }
       </div>
     </div>
   );

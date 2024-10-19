@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { MyButton } from "@/components/ui/button";
 import "./style.scss";
+import Image from "next/image";
 
 export const EnhanceBanner = () => {
   const [time, setTime] = useState<Date | null>(null);
@@ -53,12 +54,16 @@ export const EnhanceBanner = () => {
         </MyButton>
       </div>
       <div className="enhance--images">
-        <img
+        <Image
+          width={504}
+          height={500}
           className="enhance--images--circle"
           src="/images/lit-circle.svg"
           alt="circle"
         />
-        <img
+        <Image
+         width={568}
+         height={330}
           className="enhance--images--speaker"
           src="/images/jbl-speaker.svg"
           alt="jbl"

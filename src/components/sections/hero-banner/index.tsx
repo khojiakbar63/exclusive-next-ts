@@ -5,9 +5,7 @@ import { BANNER_DATA } from "@/mocks";
 import "./style.scss";
 
 export const HeroBanner: React.FC = () => {
-  const onChange = (currentSlide: number) => {
-    console.log(currentSlide);
-  };
+ 
   return (
     <div className="hero_banner">
       <Carousel arrows className="hero_banner--carousel" autoplay>

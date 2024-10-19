@@ -1,11 +1,10 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { Carousel } from "antd";
+import { Carousel } from "antd"; 
 import { HiArrowSmallRight, HiArrowSmallLeft } from "react-icons/hi2";
 import { BigTitle, SectionTitle, Deadline, Card, MyButton } from "@/components";
 import { TODAY_PRODUCTS } from "@/mocks";
 import "./style.scss";
-
 
 const CustomArrow = ({
   direction,
@@ -26,16 +25,16 @@ const CustomArrow = ({
 };
 
 export const Today: React.FC = () => {
-  const carouselRef = useRef<any>(null); 
-  const [viewAll, setViewAll] = useState(false); 
+  const carouselRef = useRef<any | null>(null); // Use a more specific type for the ref
+  const [viewAll, setViewAll] = useState(false);
 
   const handleViewAll = () => {
-    setViewAll(!viewAll); // Toggle between view modes
+    setViewAll(!viewAll);
   };
 
   return (
     <div className="today">
-      <SectionTitle size="13px">Today's</SectionTitle>
+      <SectionTitle size="13px">Today&apos;s</SectionTitle>
       <div className="today__content">
         <div className="today__content__left">
           <BigTitle>Flash Sales</BigTitle>
@@ -45,11 +44,11 @@ export const Today: React.FC = () => {
           <div className="today__arrows">
             <CustomArrow
               direction="left"
-              onClick={() => carouselRef.current?.prev()}
+              onClick={() => carouselRef.current?.prev()} // Safely call prev
             />
             <CustomArrow
               direction="right"
-              onClick={() => carouselRef.current?.next()}
+              onClick={() => carouselRef.current?.next()} // Safely call next
             />
           </div>
         )}
@@ -71,7 +70,6 @@ export const Today: React.FC = () => {
             ))}
           </div>
         ) : (
-          // Render the carousel when viewAll is false
           <Carousel
             ref={carouselRef}
             autoplay

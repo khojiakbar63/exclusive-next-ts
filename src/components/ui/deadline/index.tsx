@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import './style.scss'
+import "./style.scss";
+import Image from "next/image";
 
 export const Deadline = () => {
-
-  const [time, setTime] = useState<Date | null>(null); 
+  const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,7 +14,7 @@ export const Deadline = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!time) return null; 
+  if (!time) return null;
 
   const padZero = (num: number) => (num < 10 ? `0${num}` : num);
 
@@ -25,37 +25,43 @@ export const Deadline = () => {
 
   return (
     <div className="time">
-            <div className="time__item">
-              <div className="text">Days</div>
-              <div className="number">{days}</div>
-            </div>
-            <img
-              style={{ marginTop: "18px" }}
-              src="/icons/Semiclone.svg"
-              alt="semi-clone"
-            />
-            <div className="time__item">
-              <div className="text">Hours</div>
-              <div className="number">{hours}</div>
-            </div>
-            <img
-              style={{ marginTop: "18px" }}
-              src="/icons/Semiclone.svg"
-              alt="semi-clone"
-            />
-            <div className="time__item">
-              <div className="text">Minutes</div>
-              <div className="number">{minutes}</div>
-            </div>
-            <img
-              style={{ marginTop: "18px" }}
-              src="/icons/Semiclone.svg"
-              alt="semi-clone"
-            />
-            <div className="time__item">
-              <div className="text">Seconds</div>
-              <div className="number">{seconds}</div>
-            </div>
-          </div>
-  )
-}
+      <div className="time__item">
+        <div className="text">Days</div>
+        <div className="number">{days}</div>
+      </div>
+      <Image
+        width={4}
+        height={20}
+        style={{ marginTop: "18px" }}
+        src="/icons/Semiclone.svg"
+        alt="semi-clone"
+      />
+      <div className="time__item">
+        <div className="text">Hours</div>
+        <div className="number">{hours}</div>
+      </div>
+      <Image
+        width={4}
+        height={20}
+        style={{ marginTop: "18px" }}
+        src="/icons/Semiclone.svg"
+        alt="semi-clone"
+      />
+      <div className="time__item">
+        <div className="text">Minutes</div>
+        <div className="number">{minutes}</div>
+      </div>
+      <Image
+        width={4}
+        height={20}
+        style={{ marginTop: "18px" }}
+        src="/icons/Semiclone.svg"
+        alt="semi-clone"
+      />
+      <div className="time__item">
+        <div className="text">Seconds</div>
+        <div className="number">{seconds}</div>
+      </div>
+    </div>
+  );
+};

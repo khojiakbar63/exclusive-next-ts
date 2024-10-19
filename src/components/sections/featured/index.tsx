@@ -2,6 +2,7 @@ import React from "react";
 import { BigTitle, SectionTitle } from "@/components";
 
 import "./style.scss";
+import Image from "next/image";
 
 export const Featured = () => {
   return (
@@ -11,7 +12,9 @@ export const Featured = () => {
 
       <div className="featured__content">
         <div className="featured__content__left">
-          <img
+          <Image
+            width={511}
+            height={511}
             className="featured__content__left__img"
             src="/images/arrival-play.svg"
             alt="playstation"
@@ -31,7 +34,9 @@ export const Featured = () => {
 
         <div className="featured__content__right">
           <div className="featured__content__right--women">
-            <img
+            <Image
+              width={432}
+              height={286}
               className="featured__content__right--women__img"
               src="/images/women.svg"
               alt="women"
@@ -51,7 +56,9 @@ export const Featured = () => {
 
           <div className="featured__content__right--bottom">
             <div className="featured__content__right--bottom__left">
-              <img
+              <Image
+                width={190}
+                height={221}
                 className="speaker-img"
                 src="/images/arrival-speakers.svg"
                 alt="speaker"
@@ -70,7 +77,9 @@ export const Featured = () => {
             </div>
 
             <div className="featured__content__right--bottom__right">
-              <img
+              <Image
+                width={201}
+                height={203}
                 className="perfume-img"
                 src="/images/arrival-gucci.svg"
                 alt="gucci"

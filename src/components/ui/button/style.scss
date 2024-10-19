@@ -7,4 +7,10 @@ $Button2:  #DB4444;
     padding: 16px 48px;
     border-radius: 4px;
     font-weight: 600;
+    &:hover{
+        background-color: darken($Button2, 10%);
+    }
+    &:active{
+        background-color: darken($Button2, 20%);
+    }
 }
