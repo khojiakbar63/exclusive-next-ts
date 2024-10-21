@@ -10,6 +10,7 @@ import {
 } from "@/components";
 import {} from "@/mocks";
 import "./style.scss";
+import Link from "next/link";
 
 const Cart = () => {
   return (
@@ -32,7 +33,9 @@ const Cart = () => {
           <CartTable />
 
           <div className="!flex !justify-between !items-center !mb-[80px]">
+            <Link href="/">
             <TransButton>Return To Shop</TransButton>
+            </Link>
             <TransButton>Update Cart</TransButton>
           </div>
 
@@ -46,11 +49,15 @@ const Cart = () => {
               <h3 className="cart--card__title">Cart Total</h3>
               <div className="cart--card__content">
                 <div className="cart--card__content__item">
-                  <h4 className="cart--card__content__item--title">Subtotal:</h4>
+                  <h4 className="cart--card__content__item--title">
+                    Subtotal:
+                  </h4>
                   <h4 className="cart--card__content__item--title">$1750</h4>
                 </div>
                 <div className="cart--card__content__item">
-                  <h4 className="cart--card__content__item--title">Shipping:</h4>
+                  <h4 className="cart--card__content__item--title">
+                    Shipping:
+                  </h4>
                   <h4 className="cart--card__content__item--title">Free</h4>
                 </div>
                 <div className="cart--card__content__item">
@@ -58,7 +65,9 @@ const Cart = () => {
                   <h4 className="cart--card__content__item--title">$1750</h4>
                 </div>
               </div>
-              <MyButton className="!ml-[89px]">Procees to checkout</MyButton>
+              <MyButton className="!ml-[89px]">
+                <a href="/pages/checkout">Procees to checkout</a>
+              </MyButton>
             </div>
           </div>
         </div>

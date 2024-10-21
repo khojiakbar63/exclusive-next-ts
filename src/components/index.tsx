@@ -27,4 +27,6 @@ export {Featured} from './sections/featured';
 export {OurProducts} from './sections/our-products';
 export {ToTop} from './ui/to-top';
 export {CartTable} from './ui/cart-table';
+export {CheckoutForm} from './ui/checkout-form';
+export {PlaceOrder} from './ui/place-order';
 
