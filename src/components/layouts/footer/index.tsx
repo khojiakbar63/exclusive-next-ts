@@ -50,7 +50,7 @@ export const Footer = () => {
           <ul>
             <li className="footer--heading">Account</li>
             <li className="footer--item  !w-[175px]">
-              <a className="footer--link" href="#">
+              <a className="footer--link" href="/pages/account">
                 My Account
               </a>
             </li>

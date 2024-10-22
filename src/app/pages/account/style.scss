@@ -1,0 +1,21 @@
+.account {
+  padding: 80px 0 140px;
+  margin-top: 168px;
+  &--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    &--title {
+        font-size: 14px;
+        color: #000;
+        span {
+            color: #DB4444;
+        }
+    }
+  }
+  &--body {
+    display: flex;
+    gap: 100px;
+}
+}

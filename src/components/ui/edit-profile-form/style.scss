@@ -1,0 +1,68 @@
+.edit_profile {
+  width: 870px;
+  padding: 40px 80px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  &--password {
+    margin: 24px 0;
+    &--label {
+      margin-bottom: 16px;
+    }
+  }
+  &--title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #db4444;
+    margin-bottom: 16px;
+  }
+  &--wrapper {
+    display: flex;
+    gap: 50px !important;
+    align-items: center;
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 16px;
+    }
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &--label {
+      color: #000;
+      font-size: 16px;
+      span {
+        color: #db4444;
+      }
+    }
+    &--input {
+      background-color: #f5f5f5;
+      min-width: 330px;
+      height: 50px;
+      border-radius: 4px;
+      padding: 0 16px;
+    }
+  }
+  &--action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--btns {
+      display: flex;
+      gap: 32px;
+      &--cancel {
+        color: #000;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          color: #db4444;
+        }
+        &:active {
+          color: #000;
+        }
+      }
+    }
+  }
+}

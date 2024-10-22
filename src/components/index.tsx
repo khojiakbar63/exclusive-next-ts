@@ -29,4 +29,6 @@ export {ToTop} from './ui/to-top';
 export {CartTable} from './ui/cart-table';
 export {CheckoutForm} from './ui/checkout-form';
 export {PlaceOrder} from './ui/place-order';
+export {AccountAside} from './ui/account-aside';
+export {EditProfileForm} from './ui/edit-profile-form';
 
