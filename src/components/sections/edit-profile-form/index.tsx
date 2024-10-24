@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { MyButton } from "../button";
+import { MyButton } from "../../ui/button";
 
 export const EditProfileForm = () => {
   return (

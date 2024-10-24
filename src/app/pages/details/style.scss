@@ -1,0 +1,14 @@
+.details {
+  margin-top: 164px;
+  padding: 80px 0 140px;
+  &--wrapper--products {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 380px;
+  }
+  &__btn {
+    margin-bottom: 60px;
+  }
+}

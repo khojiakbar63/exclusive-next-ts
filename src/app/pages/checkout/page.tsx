@@ -36,9 +36,6 @@ const Checkout = () => {
               },
             ]}
           />
-
-
-
             <div className="checkout--content">
                 <CheckoutForm />
                 <PlaceOrder />

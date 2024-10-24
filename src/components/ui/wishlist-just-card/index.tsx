@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TbHttpDelete } from "react-icons/tb";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
-import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import "./style.scss";
 
@@ -78,8 +76,8 @@ export const WishlistJustCard = ({
         </div>
         <div className="card--body--rate">
             {
-              [1,2,3,4,5].map((item)=> (
-                <img src="/icons/rate-star.svg" alt="star" />
+              [1,2,3,4,5].map((i)=> (
+                <Image key={i} src="/icons/rate-star.svg" alt="star" />
                 ))
             }
           <div className="card--body--rate--text">{rate}</div>

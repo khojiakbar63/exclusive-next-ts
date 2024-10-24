@@ -1,0 +1,47 @@
+.staffs_card {
+  width: 370px;
+  height: 564px;
+  border-radius: 4px;
+
+  &--header {
+    background-color: #f5f5f5;
+    width: 370px;
+    height: 430px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  &--body {
+    background-color: #fff;
+    padding-top: 32px;
+  }
+  &--title {
+    font-size: 32px;
+    color: #000;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  &--position {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &--socials {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &--item {
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      &:active {
+        cursor: pointer;
+        transform: scale(1);
+      }
+    }
+  }
+}

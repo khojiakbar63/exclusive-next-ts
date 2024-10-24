@@ -8,9 +8,8 @@ import {
   TransButton,
   MyButton,
 } from "@/components";
-import {} from "@/mocks";
-import "./style.scss";
 import Link from "next/link";
+import "./style.scss";
 
 const Cart = () => {
   return (

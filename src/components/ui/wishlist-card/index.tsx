@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TbHttpDelete } from "react-icons/tb";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import "./style.scss";

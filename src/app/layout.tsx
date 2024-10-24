@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Header, Footer, Top, Bottom } from "@/components";
-import "./globals.css";
-
-
+import { Footer, Top, Bottom } from "@/components";
+import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "Exclusive",
@@ -16,12 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased`}>
         <Top />
-        {/* <Header /> */}
-        {children}
+        <div className="">{children}</div>
         <Footer />
         <Bottom />
       </body>

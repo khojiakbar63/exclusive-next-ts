@@ -50,12 +50,12 @@ export const Card = ({
         </div>
         <div className="card--body--rate">
           <div className="card--body--rate--icons">
-            {[1, 2, 3, 4, 5].map((item) => (
+            {[1, 2, 3, 4, 5].map(() => (
               <Image
               width={20}
               height={20}
                 className="card--body--rate--icons--icon"
-                src="icons/rate-star.svg"
+                src="/icons/rate-star.svg"
                 alt="rate"
               />
             ))}

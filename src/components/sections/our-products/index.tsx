@@ -5,6 +5,7 @@ import { HiArrowSmallRight, HiArrowSmallLeft } from "react-icons/hi2";
 import { EXPLORE_PRODUCTS } from "@/mocks";
 import { Carousel } from "antd";
 import "./style.scss";
+import Link from "next/link";
 
 // Custom Arrow Component
 const CustomArrow = ({
@@ -66,15 +67,17 @@ export const OurProducts = () => {
         {viewAll ? (
           <div className="today__all-products">
             {EXPLORE_PRODUCTS.map((item) => (
-              <ExploreCard
-                key={item.title} // You can use a unique key from the data
-                image={item.image}
-                title={item.title}
-                price={item.price}
-                rate={item.rate}
-                badge={item.badge || ''}
-                colors={item.colors || ''}
-              />
+              <Link href={`/pages/details`} key={item.id}>
+                <ExploreCard
+                  key={item.title} // You can use a unique key from the data
+                  image={item.image}
+                  title={item.title}
+                  price={item.price}
+                  rate={item.rate}
+                  badge={item.badge || ""}
+                  colors={item.colors || ""}
+                />
+              </Link>
             ))}
           </div>
         ) : (
@@ -89,28 +92,32 @@ export const OurProducts = () => {
               <div key={index} className="carousel-slide">
                 <div className="carousel-row">
                   {group.slice(0, 4).map((item) => (
-                    <ExploreCard
-                      key={item.title} // You can use a unique key from the data
-                      image={item.image}
-                      title={item.title}
-                      price={item.price}
-                      rate={item.rate}
-                      badge={item.badge}
-                      colors={item.colors}
-                    />
+                    <Link href={`/pages/details`} key={item.id}>
+                      <ExploreCard
+                        key={item.title} // You can use a unique key from the data
+                        image={item.image}
+                        title={item.title}
+                        price={item.price}
+                        rate={item.rate}
+                        badge={item.badge || ""}
+                        colors={item.colors || ""}
+                      />
+                    </Link>
                   ))}
                 </div>
                 <div className="carousel-row">
                   {group.slice(4, 8).map((item) => (
-                    <ExploreCard
-                      key={item.title} // You can use a unique key from the data
-                      image={item.image}
-                      title={item.title}
-                      price={item.price}
-                      rate={item.rate}
-                      badge={item.badge}
-                      colors={item.colors}
-                    />
+                    <Link href={`/pages/details`} key={item.id}>
+                      <ExploreCard
+                        key={item.title} // You can use a unique key from the data
+                        image={item.image}
+                        title={item.title}
+                        price={item.price}
+                        rate={item.rate}
+                        badge={item.badge || ""}
+                        colors={item.colors || ""}
+                      />
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -120,7 +127,8 @@ export const OurProducts = () => {
 
         <MyButton
           className="today__wrapper__btn !mb-[60px]"
-          onClick={handleViewAll}>
+          onClick={handleViewAll}
+        >
           {viewAll ? "Show Less" : "View All Products"}
         </MyButton>
       </div>

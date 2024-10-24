@@ -1,0 +1,19 @@
+.about_story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--content {
+    &--title {
+      font-size: 54px !important;
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    &--text {
+      max-width: 485px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}

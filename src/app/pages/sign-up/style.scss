@@ -1,5 +1,5 @@
 .sign_up_page {
-  margin: 60px 0 140px;
+  margin: 260px 0 140px;  
   position: relative !important;
   min-height: 781px;
   display: flex;
@@ -16,11 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 998;
     &--img {
       position: absolute;
       border-radius: 4px;
-      z-index: 1;
     }
   }
   .form_wrapper {

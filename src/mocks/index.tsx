@@ -1,10 +1,15 @@
 import { FaChevronRight } from "react-icons/fa";
-
 import { LuGamepad } from "react-icons/lu";
 import { BsSmartwatch } from "react-icons/bs";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { MdOutlinePhotoCamera } from "react-icons/md";
 import { FaHeadphonesAlt } from "react-icons/fa";
+
+// ABOUT_INDICATOR
+import { BsShop } from "react-icons/bs";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { BiShoppingBag } from "react-icons/bi";
+import { GrMoney } from "react-icons/gr";
 
 export const ASIDE = [
   {
@@ -645,3 +650,64 @@ export const WISHLIST_JUST_PRODUCTS = [
     badge: undefined
   },
 ]
+
+export const ABOUT_INDICATOR = [
+  {
+    id: 1,
+    icon: BsShop,
+    number:10.5,
+    text: "Sallers active our site"
+  },
+  {
+    id: 2,
+    icon: GiTakeMyMoney,
+    number:33,
+    text: "Sallers active our site"
+  },
+  {
+    id: 3,
+    icon: BiShoppingBag,
+    number:45.5,
+    text: "Sallers active our site"
+  },
+  {
+    id: 4,
+    icon: GrMoney,
+    number:25,
+    text: "Sallers active our site"
+  }
+]
+
+export const STAFFS = [
+  {
+    id: 1,
+    image: "/images/tom.svg",
+    name: "Tom Cruise",
+    position: "Founder & Chairman",
+  },
+  {
+    id: 2,
+    image: "/images/emma.svg",
+    name: "Emma Watson",
+    position: "Managing Director",
+  },
+  {
+    id: 3,
+    image: "/images/will.svg",
+    name: "Will Smith",
+    position: "Product Designer",
+  },
+  {
+    id: 4,
+    image: "/images/emma.svg",
+    name: "Emma Watson",
+    position: "Managing Director",
+  },
+  {
+    id: 5,
+    image: "/images/will.svg",
+    name: "Will Smith",
+    position: "Product Designer",
+  },
+]
+

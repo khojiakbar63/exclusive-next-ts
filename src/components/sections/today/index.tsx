@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { Carousel } from "antd"; 
+import { Carousel } from "antd";
 import { HiArrowSmallRight, HiArrowSmallLeft } from "react-icons/hi2";
 import { BigTitle, SectionTitle, Deadline, Card, MyButton } from "@/components";
 import { TODAY_PRODUCTS } from "@/mocks";
+import Link from "next/link";
 import "./style.scss";
 
 const CustomArrow = ({
@@ -58,15 +59,17 @@ export const Today: React.FC = () => {
         {viewAll ? (
           <div className="today__all-products">
             {TODAY_PRODUCTS.map((item) => (
-              <Card
-                key={item.id}
-                discount={item.discount}
-                title={item.title}
-                image={item.image}
-                current={item.current_price}
-                old={item.old_price}
-                rate={item.rate}
-              />
+              <Link href={`/pages/details`} key={item.id}>
+                <Card
+                  key={item.id}
+                  discount={item.discount}
+                  title={item.title}
+                  image={item.image}
+                  current={item.current_price}
+                  old={item.old_price}
+                  rate={item.rate}
+                />
+              </Link>
             ))}
           </div>
         ) : (
@@ -77,20 +80,25 @@ export const Today: React.FC = () => {
             className="today__wrapper__products"
           >
             {TODAY_PRODUCTS.map((item) => (
-              <Card
-                key={item.id}
-                discount={item.discount}
-                title={item.title}
-                image={item.image}
-                current={item.current_price}
-                old={item.old_price}
-                rate={item.rate}
-              />
+              <Link href={`/pages/details`} key={item.id}>
+                <Card
+                  key={item.id}
+                  discount={item.discount}
+                  title={item.title}
+                  image={item.image}
+                  current={item.current_price}
+                  old={item.old_price}
+                  rate={item.rate}
+                />
+              </Link>
             ))}
           </Carousel>
         )}
 
-        <MyButton className="today__wrapper__btn !mb-[60px]" onClick={handleViewAll}>
+        <MyButton
+          className="today__wrapper__btn !mb-[60px]"
+          onClick={handleViewAll}
+        >
           {viewAll ? "Show Less" : "View All Products"}
         </MyButton>
       </div>

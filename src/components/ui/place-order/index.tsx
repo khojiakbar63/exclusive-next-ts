@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Input, Radio } from "antd";
 import { MyButton } from "../button";
 import "./style.scss";
+import Image from "next/image";
 
 export const PlaceOrder = () => {
   const [value, setValue] = useState(null); // State to track the selected radio button
@@ -15,14 +16,14 @@ export const PlaceOrder = () => {
       <div className="place_order--content">
         <div className="place_order--content--item">
           <div className="place_order--content--item--img">
-            <img width={49} src="/images/playstation.svg" alt="playstation" />
+            <Image width={49} src="/images/playstation.svg" alt="playstation" />
             <h4>H1 Gamepad</h4>
           </div>
           <p>$650</p>
         </div>
         <div className="place_order--content--item">
           <div className="place_order--content--item--img">
-            <img width={49} src="/images/tv.svg" alt="tv" />
+            <Image width={49} src="/images/tv.svg" alt="tv" />
             <h4>LCD Monitor</h4>
           </div>
           <p>$1100</p>
@@ -50,10 +51,10 @@ export const PlaceOrder = () => {
                   Bank
                 </Radio>
                 <div className="place_order--content--bank--images">
-                  <img src="/images/bkash.svg" alt="bank" />
-                  <img src="/images/visa.svg" alt="bank" />
-                  <img src="/images/mastercard.svg" alt="bank" />
-                  <img src="/images/hind.svg" alt="bank" />
+                  <Image src="/images/bkash.svg" alt="bank" />
+                  <Image src="/images/visa.svg" alt="bank" />
+                  <Image src="/images/mastercard.svg" alt="bank" />
+                  <Image src="/images/hind.svg" alt="bank" />
                 </div>
               </div>
 

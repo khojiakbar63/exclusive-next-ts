@@ -1,0 +1,57 @@
+.about_indicator {
+  width: 270px;
+  height: 230px;
+  border: 1px solid #000000b8;
+  border-radius: 4px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    border-color: #db4444;
+    color: #ffffff;
+    background: #db4444;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .about_indicator--black {
+      background: #fff;
+    }
+    .about_indicator--grey {
+      background: #ffffff51;
+      backdrop-filter: blur(10px);
+    }
+    .about_indicator--icon {
+      color: #000;
+    }
+  }
+  &--grey {
+    width: 80px;
+    height: 80px;
+    background: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--black {
+    width: 58px;
+    height: 58px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &--icon {
+    color: #fff;
+    font-size: 33px;
+  }
+  &--number {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 -5px;
+  }
+  &--text {
+  }
+}
